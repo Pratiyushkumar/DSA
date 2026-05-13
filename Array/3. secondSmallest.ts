@@ -17,5 +17,6 @@ function findSecondSmallest(arr: number[]) {
   return secondSmallest;
 }
 
-console.log(findSecondSmallest([1, 2, 4, 7, 7, 5]));
-console.log(findSecondSmallest([1]));
+// console.log(findSecondSmallest([1, 2, 4, 7, 7, 5]));
+console.log(findSecondSmallest([12, 25, 8, 55, 10, 33, 17, 11]));
+// console.log(findSecondSmallest([1]));
