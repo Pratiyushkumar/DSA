@@ -34,15 +34,15 @@ def better_approach(nums):
 # print(better_approach([9, 6, 4, 2, 3, 5, 7, 0, 1]))
 # print(better_approach([3, 0, 1]))
 
-def optimal_approach(nums):
-    n = len(nums)
-    s1 = n * ((n+1)//2)
-    s2 = 0
-    for i in range(0, len(nums)):
-        s2 += nums[i]
+def optimized_approach(nums):
+    lo, hi = min(nums), max(nums)
 
+    s1 = (lo + hi) * (hi - lo + 1) // 2 
+    s2 =  sum(nums)
+    
     return s1 - s2
 
-
-print(optimal_approach([9, 6, 4, 2, 3, 5, 7, 0, 1]))
-print(optimal_approach([3, 0, 1]))
+print(optimized_approach([8,2,4,5,3,7,1]))
+print(optimized_approach([1, 2, 3, 5]))
+print(optimized_approach([9, 6, 4, 2, 3, 5, 7, 0, 1]))
+print(optimized_approach([3, 0, 1]))
