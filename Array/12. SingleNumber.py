@@ -12,6 +12,7 @@ def brute_force_approach(nums):
     return -1
 
 
+
 # print(brute_force_approach([1, 1, 2, 3, 3, 4, 4]))
 # print(brute_force_approach([4, 1, 2, 1, 2]))
 
